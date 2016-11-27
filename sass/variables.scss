@@ -1,0 +1,37 @@
+$font: "RalewayRegular", sans-serif;
+$font-bold: "RalewayBold", sans-serif;
+
+$base-text-color: #333;
+$alt-text-color: #fff;
+$base-background-color: #eb5e5e;
+
+/*==========  Desktop First Method  ==========*/
+
+$media-desk-ld: "(max-width: 1200px)";
+/* Medium Devices, Desktops */
+$media-desk-md: "(max-width: 992px)";
+/* Small Devices, Tablets */
+$media-desk-sd: "(max-width:768px)";
+/* Extra Small Devices, Phones */
+$media-desk-esd: "(max-width: 480px)";
+/* Custom, iPhone Retina */
+$media-desk-custom: "(max-width: 320px)";
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+$media-mob-ld: "(min-width: 1200px)";
+/* Medium Devices, Desktops */
+$media-mob-md: "(min-width: 992px)";
+/* Small Devices, Tablets */
+$media-mob-sd: "(min-width:768px)";
+/* Extra Small Devices, Phones */
+$media-mob-esd: "(min-width: 480px)";
+/* Custom, iPhone Retina */
+$media-mob-custom: "(min-width: 320px)";
+
+///use @media #{$desktop-widths2} {...}
+
+
+

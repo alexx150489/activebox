@@ -1,0 +1,162 @@
+.main-header {
+	height: 680px;
+	background-image: url('../img/banner.jpg');
+	background-size: cover; 
+}
+.navbar-wrapper {
+	@include container();
+	position: relative;
+}
+
+.navbar {
+	@include clearfix();
+	border-bottom: 1px solid #b7b7b7;
+}
+
+.navbar__logo {
+	float: left;
+	width: 189px;
+	height: 94px;
+	line-height: 94px;
+	
+}
+
+.navbar__touch-menu {
+	display: none;
+}
+
+.navbar__main-navigation {
+	float: right;
+}
+.navbar__menu-list {
+	@include list-nostyle();
+	@include clearfix();
+	padding: 0;
+	font-size: 0;
+	height: 94px;
+	line-height: 94px;
+}
+
+.navbar__menu-item {
+	float: left;
+	padding: 0 30px;
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+.navbar__menu-link {
+	font-family: $font-bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: none;
+	color: $alt-text-color;
+	transition-duration: 0.2s;
+	&:hover {
+		color: #acacac;
+	}
+}
+
+@media #{$media-desk-md} {
+	.navbar__menu-link {
+		font-size: 14px;
+	}
+	.navbar__menu-item {
+		padding: 0 13px;
+	}
+	.navbar__logo {
+		width: 160px;
+	}
+	
+}
+@media #{$media-desk-sd} {
+	
+	body {
+		/*отступ для текста*/
+		padding-top: 76px;
+	}
+	
+	.navbar-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: #2a2e48;
+		border: none;
+	}
+	
+	.navbar {
+		border: none;
+	}
+	
+	.navbar__main-navigation {
+		
+		display: none;
+
+		position: absolute;
+		/*		100% для отступа в размере родителя header.*/
+		top: 100%;
+		/* для растяжения на всю */
+		left: 0;
+		right: 0;
+		
+	}
+	
+	.navbar__logo {
+		height: 76px;
+	}
+	
+	.navbar__touch-menu {
+		display: block;
+		float: right;
+		width: 40px;
+		height: 40px;
+		margin-top: 20px;
+		cursor: pointer;
+		background-color: $base-background-color;
+		border: none;
+		border-radius: 50%;
+	}
+	
+	.navbar__touch-menu i {
+		color: #fff;
+		font-size: 20px;
+	}
+	.navbar__menu-item {
+		float: none;
+		text-align: center;
+		&:last-child {
+			padding-right: 13px;
+		}
+	}
+	.navbar__menu-link {
+		border-top: 1px solid #eee;
+		border-left: 3px solid transparent;
+		background: #fff;
+		color: #666;
+		display: block;
+		padding: 15px 0;
+		font-size: 14px;
+		line-height: normal;
+		font-weight: bold;
+		color: #000;
+		transition-duration: 0.2s;
+	}
+
+	.navbar__menu-item:first-child .navbar__menu-link {
+		border-top: none;
+	}
+
+	.navbar__menu-link:hover {
+		background: #f0f0f0;
+		color: #444;
+		border-left: 3px solid #515572;
+	}
+}
+
+
+
+
+
+
+

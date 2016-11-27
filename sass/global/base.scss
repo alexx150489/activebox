@@ -1,0 +1,51 @@
+body {
+	font-family: $font;
+	font-size: 16px;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+input[type="tel"]:focus {
+	outline: none;
+}
+
+input[type="email"]:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+	padding: 0 15px;
+	
+}

@@ -1,0 +1,46 @@
+// clearfix 
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Убрать маркеры списка
+@mixin list-nostyle() {
+	list-style-type: none;
+}
+
+
+// Сброс паддингов
+@mixin p0() {
+	padding: 0;
+}
+
+
+// Сброс маргинов
+@mixin m0() {
+	margin: 0;
+}
+
+// Адаптивный контейнер
+@mixin container() {
+	padding: 0 15px;
+	box-sizing: border-box;
+
+	@media (min-width: 768px) {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+
+	@media (min-width: 992px) {
+		max-width: 970px;
+	}
+	
+	@media (min-width: 1200px) {
+		max-width: 1170px;
+	}
+}
+
+
