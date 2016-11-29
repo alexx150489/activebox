@@ -99,6 +99,41 @@
   color: #fff;
   cursor: pointer; }
 
+.features-wrapper {
+  padding: 0 15px;
+  box-sizing: border-box; }
+
+.features {
+  padding: 95px 0; }
+  .features::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.features__features-item {
+  float: left;
+  width: 33.33333333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.features__features-item i {
+  font-size: 70px;
+  color: #eb5e5e; }
+
+.features__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "RalewayBold", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.features__text {
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px; }
+
 @font-face {
   font-family: "RalewayBold";
   src: url("../fonts/RalewayBold/RalewayBold.eot");
@@ -522,16 +557,23 @@ textarea {
     margin: 0 auto; }
   .promo-wrapper{
     max-width: 750px;
+    margin: 0 auto; }
+  .features-wrapper{
+    max-width: 750px;
     margin: 0 auto; } }
 @media (min-width: 992px){
   .navbar-wrapper{
     max-width: 970px; }
   .promo-wrapper{
+    max-width: 970px; }
+  .features-wrapper{
     max-width: 970px; } }
 @media (min-width: 1200px){
   .navbar-wrapper{
     max-width: 1170px; }
   .promo-wrapper{
+    max-width: 1170px; }
+  .features-wrapper{
     max-width: 1170px; } }
 @media (max-width: 992px){
   .navbar__menu-link{
@@ -539,7 +581,9 @@ textarea {
   .navbar__menu-item{
     padding: 0 13px; }
   .navbar__logo{
-    width: 160px; } }
+    width: 160px; }
+  .features__features-item{
+    width: 50%; } }
 @media (max-width: 768px){
   body{
     /*отступ для текста*/
@@ -578,9 +622,8 @@ textarea {
     font-size: 20px; }
   .navbar__menu-item{
     float: none;
-    text-align: center; }
-  .navbar__menu-item:last-child{
-    padding-right: 13px; }
+    text-align: center;
+    padding: 0; }
   .navbar__menu-link{
     border-top: 1px solid #eee;
     border-left: 3px solid transparent;
@@ -604,7 +647,9 @@ textarea {
   .promo__text{
     font-size: 16px; }
   .promo__btn{
-    font-size: 14px; } }
+    font-size: 14px; }
+  .features__features-item{
+    width: 100%; } }
 @media (max-width: 480px){
   .promo__title{
     padding: 0 64px; }

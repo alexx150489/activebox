@@ -92,14 +92,12 @@
 	.navbar__main-navigation {
 		
 		display: none;
-
 		position: absolute;
 		/*		100% для отступа в размере родителя header.*/
 		top: 100%;
 		/* для растяжения на всю */
 		left: 0;
 		right: 0;
-		
 	}
 	
 	.navbar__logo {
@@ -122,13 +120,13 @@
 		color: #fff;
 		font-size: 20px;
 	}
+	
 	.navbar__menu-item {
 		float: none;
 		text-align: center;
-		&:last-child {
-			padding-right: 13px;
-		}
+		padding: 0;
 	}
+	
 	.navbar__menu-link {
 		border-top: 1px solid #eee;
 		border-left: 3px solid transparent;
