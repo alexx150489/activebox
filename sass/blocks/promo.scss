@@ -22,6 +22,7 @@
 	font-size: 18px;
 	line-height: 28px;
 	color: #fff;
+	text-transform: uppercase;
 }
 
 .promo__btn {
@@ -33,6 +34,10 @@
 	text-transform: uppercase;
 	color: #fff;
 	cursor: pointer;
+	transition-duration: 0.2s;
+	&:hover {
+		background-color: #bf3b3b;
+	}
 }
 
 @media #{$media-desk-sd} {
