@@ -16,6 +16,7 @@
   background-size: cover; }
 
 .navbar-wrapper {
+  min-width: 320px;
   padding: 0 15px;
   box-sizing: border-box;
   position: relative; }
@@ -30,8 +31,8 @@
 .navbar__logo {
   float: left;
   width: 189px;
-  height: 94px;
-  line-height: 94px; }
+  height: 80px;
+  line-height: 96px; }
 
 .navbar__touch-menu {
   display: none; }
@@ -43,8 +44,8 @@
   list-style-type: none;
   padding: 0;
   font-size: 0;
-  height: 94px;
-  line-height: 94px; }
+  height: 80px;
+  line-height: 80px; }
   .navbar__menu-list::after {
     content: "";
     display: table;
@@ -67,6 +68,7 @@
     color: #acacac; }
 
 .promo-wrapper {
+  min-width: 320px;
   padding: 0 15px;
   box-sizing: border-box; }
 
@@ -104,6 +106,7 @@
     background-color: #bf3b3b; }
 
 .features-wrapper {
+  min-width: 320px;
   padding: 0 15px;
   box-sizing: border-box; }
 
@@ -139,7 +142,8 @@
   margin-bottom: 10px; }
 
 .works-wrapper {
-  width: 100%; }
+  width: 100%;
+  min-width: 320px; }
 
 .works::after {
   content: "";
@@ -180,6 +184,7 @@
   font-size: 16px; }
 
 .team-wrapper {
+  min-width: 320px;
   padding: 0 15px;
   box-sizing: border-box; }
 
@@ -243,6 +248,110 @@
     background-color: #ededed; }
   .team__social-link:hover i {
     color: #eb5e5e; }
+
+.download-wrapper {
+  min-width: 320px;
+  padding: 0 15px;
+  box-sizing: border-box; }
+
+.download {
+  text-align: center;
+  padding-bottom: 95px; }
+
+.download__title {
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 15px 0; }
+
+.download__text {
+  font-family: "RalewayBold", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+
+.download__btn {
+  padding: 18px 120px;
+  background-color: #e84545;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: 0.2s; }
+  .download__btn:hover {
+    background-color: #bf3b3b; }
+
+.main-footer {
+  background-color: #3a3e64; }
+
+.footer-wrapper {
+  min-width: 320px;
+  padding: 0 15px;
+  box-sizing: border-box; }
+
+.footer {
+  padding-bottom: 60px; }
+  .footer::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.footer-item {
+  float: left;
+  width: 33.33333333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center; }
+
+.footer-title {
+  margin: 70px 0 30px 0; }
+
+.footer__location-title {
+  text-transform: uppercase;
+  color: #fff; }
+
+.footer__location-text {
+  color: #9092a7;
+  padding: 0 80px; }
+
+.footer__social-title {
+  text-transform: uppercase;
+  color: #fff; }
+
+.footer__social-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+  .footer__social-list::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.footer__social-item {
+  margin-right: 10px; }
+  .footer__social-item:last-child {
+    margin-right: 0; }
+
+.footer__social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #6c7279;
+  color: #6c7279;
+  text-align: center;
+  line-height: 30px;
+  transition-duration: 0.2s; }
+  .footer__social-link:hover {
+    background-color: #ededed; }
+  .footer__social-link:hover i {
+    color: #eb5e5e; }
+
+.footer__about-title {
+  text-transform: uppercase;
+  color: #fff; }
+
+.footer__about__text {
+  color: #9092a7; }
 
 @font-face {
   font-family: "RalewayBold";
@@ -661,7 +770,7 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
-@media (min-width: 768px){
+@media (min-width: 769px){
   .navbar-wrapper{
     max-width: 750px;
     margin: 0 auto; }
@@ -672,6 +781,12 @@ textarea {
     max-width: 750px;
     margin: 0 auto; }
   .team-wrapper{
+    max-width: 750px;
+    margin: 0 auto; }
+  .download-wrapper{
+    max-width: 750px;
+    margin: 0 auto; }
+  .footer-wrapper{
     max-width: 750px;
     margin: 0 auto; } }
 @media (min-width: 992px){
@@ -682,6 +797,10 @@ textarea {
   .features-wrapper{
     max-width: 970px; }
   .team-wrapper{
+    max-width: 970px; }
+  .download-wrapper{
+    max-width: 970px; }
+  .footer-wrapper{
     max-width: 970px; } }
 @media (min-width: 1200px){
   .navbar-wrapper{
@@ -691,6 +810,10 @@ textarea {
   .features-wrapper{
     max-width: 1170px; }
   .team-wrapper{
+    max-width: 1170px; }
+  .download-wrapper{
+    max-width: 1170px; }
+  .footer-wrapper{
     max-width: 1170px; } }
 @media (max-width: 992px){
   .navbar__menu-link{
@@ -698,7 +821,8 @@ textarea {
   .navbar__menu-item{
     padding: 0 13px; }
   .navbar__logo{
-    width: 160px; }
+    width: 160px;
+    line-height: 88px; }
   .features__features-item{
     width: 50%; }
   .works__works-item{
@@ -709,7 +833,11 @@ textarea {
     font-size: 13px; }
   .team__team-item{
     width: 50%;
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .footer-item{
+    width: 100%; }
+  .footer-title{
+    margin: 45px 0 30px 0; } }
 @media (max-width: 768px){
   body{
     /*отступ для текста*/
@@ -786,7 +914,12 @@ textarea {
     width: 100%;
     text-align: center; }
   .team__team-img{
-    display: inline-block; } }
+    display: inline-block; }
+  .download__title{
+    padding: 0 20px;
+    margin: 28px 0; }
+  .download__btn{
+    padding: 18px 85px; } }
 @media (max-width: 480px){
   .promo__title{
     padding: 0 64px; }

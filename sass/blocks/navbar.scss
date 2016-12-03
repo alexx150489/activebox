@@ -16,8 +16,8 @@
 .navbar__logo {
 	float: left;
 	width: 189px;
-	height: 94px;
-	line-height: 94px;
+	height: 80px;
+	line-height: 96px;
 	
 }
 
@@ -33,8 +33,8 @@
 	@include clearfix();
 	padding: 0;
 	font-size: 0;
-	height: 94px;
-	line-height: 94px;
+	height: 80px;
+	line-height: 80px;
 }
 
 .navbar__menu-item {
@@ -66,11 +66,11 @@
 	}
 	.navbar__logo {
 		width: 160px;
+		line-height: 88px;
 	}
 	
 }
 @media #{$media-desk-sd} {
-	
 	body {
 		/*отступ для текста*/
 		padding-top: 76px;
@@ -84,6 +84,7 @@
 		background-color: #2a2e48;
 		border: none;
 		z-index: 999;
+		
 	}
 	
 	.navbar {
