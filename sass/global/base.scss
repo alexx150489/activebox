@@ -1,10 +1,10 @@
 body {
-	font-family: $font;
-	font-size: 16px;
+  font-family: $font;
+  font-size: 16px;
 }
 
 h1 {
-	margin: 0;
+  margin: 0;
 }
 
 h2 {
@@ -20,23 +20,23 @@ p {
 }
 
 input[type="text"]:focus {
-	outline: none;
+  outline: none;
 }
 
 input[type="tel"]:focus {
-	outline: none;
+  outline: none;
 }
 
 input[type="email"]:focus {
-	outline: none;
+  outline: none;
 }
 
 textarea:focus {
-	outline: none;
+  outline: none;
 }
 
 button:focus {
-	outline: none;
+  outline: none;
 }
 
 .img-responsive {
@@ -45,6 +45,24 @@ button:focus {
 }
 
 .container {
-	padding: 0 15px;
-	
+  padding: 0 15px;
+  box-sizing: border-box;
 }
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+

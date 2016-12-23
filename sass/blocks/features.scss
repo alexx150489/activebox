@@ -1,48 +1,44 @@
-.features-wrapper {
-	@include container();
-}
-
 .features {
-	@include clearfix();
-	padding: 95px 0;
+  @include clearfix();
+  padding: 95px 0;
 }
 
 .features__features-item {
-	float: left;
-	width: 33.33333333%;
-	padding: 0 15px;
-	box-sizing: border-box;
-	text-align: center;
-	margin-bottom: 50px;
+  float: left;
+  width: 33.33333333%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .features__features-item i {
-	font-size: 70px;
-	color: #eb5e5e;
+  font-size: 70px;
+  color: #eb5e5e;
 }
 
 .features__title {
-	font-size: 14px;
-	text-transform: uppercase;
-	font-family: "RalewayBold", sans-serif;
-	margin-top: 20px;
-	margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "RalewayBold", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .features__text {
-	font-family: "RalewayRegular", sans-serif;
-	font-size: 16px;
-	margin-bottom: 10px;
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 @media #{$media-desk-md} {
-	.features__features-item {
-		width: 50%;
-	}
+  .features__features-item {
+    width: 50%;
+  }
 }
 
 @media #{$media-desk-sd} {
-	.features__features-item {
-		width: 100%;
-	}
+  .features__features-item {
+    width: 100%;
+  }
 }

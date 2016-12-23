@@ -1,4 +1,4 @@
-// clearfix 
+// clearfix
 @mixin clearfix() {
   &::after {
     content: "";
@@ -9,38 +9,38 @@
 
 // Убрать маркеры списка
 @mixin list-nostyle() {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 
 // Сброс паддингов
 @mixin p0() {
-	padding: 0;
+  padding: 0;
 }
 
 // Сброс маргинов
 @mixin m0() {
-	margin: 0;
+  margin: 0;
 }
 
 // Адаптивный контейнер
-@mixin container() {
-	min-width: 320px;
-	padding: 0 15px;
-	box-sizing: border-box;
-	// прибавил +1 что бы на 768px не было центровки
-	@media (min-width: 769px) {
-		max-width: 750px;
-		margin: 0 auto;
-	}
-
-	@media (min-width: 992px) {
-		max-width: 970px;
-	}
-	
-	@media (min-width: 1200px) {
-		max-width: 1170px;
-	}
-}
+//@mixin container() {
+//  min-width: 320px;
+//  padding: 0 15px;
+//  box-sizing: border-box;
+//  // прибавил +1 что бы на 768px не было центровки
+//  @media (min-width: 769px) {
+//    max-width: 750px;
+//    margin: 0 auto;
+//  }
+//
+//  @media (min-width: 992px) {
+//    max-width: 970px;
+//  }
+//
+//  @media (min-width: 1200px) {
+//    max-width: 1170px;
+//  }
+//}
 
 
